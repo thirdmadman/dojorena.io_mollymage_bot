@@ -1,0 +1,33 @@
+{
+  "name": "dojorena.io_mollymage",
+  "version": "1.0.0",
+  "description": "Bot for Molly Mage",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/listen",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --no-notify --respawn --transpile-only src/listen.ts",
+    "build": "rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thirdmadman/dojorena.io_mollyMage.git"
+  },
+  "author": "thirdmadman",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/thirdmadman/dojorena.io_mollyMage/issues"
+  },
+  "homepage": "https://github.com/thirdmadman/dojorena.io_mollyMage#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.0",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/ws": "^8.5.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.3"
+  }
+}
